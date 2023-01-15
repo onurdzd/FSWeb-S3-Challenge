@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -63,7 +150,15 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, i {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i {
     text-decoration: none;
 }
 
@@ -77,9 +172,12 @@ h2 {
 
 h3 {
     font-size: 5rem;
+    color: white;
+    padding-top: 3rem;
 }
 
-p, a {
+p,
+a {
     font-size: 3rem;
 }
 
@@ -91,6 +189,62 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: rgb(225, 239, 230);
+    text-align: center;
+}
+
+.header-bg {
+    background-color: rgb(0, 4, 17, .8);
+    height: 30vh;
+}
+
+header h1 {
+    color: white;
+    padding-top: 0.5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.menu-bolum {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header nav div {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration-style: solid;
+    text-align: center;
+}
+
+header nav a {
+    font-size: 2rem;
+    color: white;
+    margin-left: 0;
+    margin: 2.5rem;
+    cursor: pointer;
+}
+
+.social-media {
+    display: flex;
+    width: 20%;
+    height: 2rem;
+    justify-content: space-around;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.social-media i {
+    width: 100%;
+    font-size: 3rem;
 }
 
 /* spacers */
@@ -99,6 +253,7 @@ header {
     height: 20vh;
     background-color: rgb(0, 4, 17);
 }
+
 .spacer-sm {
     width: 100%;
     height: 10vh;
@@ -108,20 +263,31 @@ header {
 /* gallery section */
 .gallery {
     width: 100%;
-    height: 100vh;
+    height: max-content;
     text-align: center;
     background-color: rgb(0, 4, 17);
+}
+
+.gallery div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 30%;
+    margin: 2rem;
 }
 
 /* about us section */
 .about {
     width: 100%;
-    height: 75vh;
+    height: max-content;
     text-align: center;
     background-image: url("../img/staff-cooks.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    color: white;
 }
 
 .about-container {
@@ -149,6 +315,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(0, 4, 17);
+    color: white;
 }
 
 .contact-container {
@@ -188,57 +355,111 @@ header {
     width: 25%;
 }
 
+.contacts a {
+    text-decoration: none;
+    color: white;
+}
+
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    height: 20vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+    color: white;
+}
+
+.footer-flex {
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.mail-liste {
+    width: 40%;
+    text-align: center;
+}
+
+.mail-liste div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer input {
+    height: 5vh;
+    width: 23vw;
+    font-size: initial;
+    font-weight: bold;
+}
+
+footer button {
+    height: 5vh;
+    width: 9vw;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+footer nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav a {
+    color: white;
+}
+
+.copyright {
+    float: right;
+    font-size: 2rem;
+    margin-right: 5rem;
 }
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+
 
     /* gallery section */
     .gallery {
-        height: auto;
+        height: max-content;
     }
-    
+
     /* about us section */
 
     .about {
-        height: 200vh;
+        height: max-content;
     }
-    
+
     .about h2 {
         width: 100%;
         padding-top: 5vh;
     }
-    
+
     .about-container .text {
         width: 85%;
     }
-    
+
     /* contact us section */
     .contact h3 {
         padding-top: 2.5vh;
     }
-    
+
     .info {
         flex-wrap: wrap;
     }
-    
+
     .address {
         width: 100%;
         padding-bottom: 2.5vh;
     }
-    
+
     .hours {
         width: 100%;
     }
-    
+
     .contacts {
         width: 100%;
         padding-bottom: 2.5vh;
