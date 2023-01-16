@@ -398,7 +398,7 @@ footer nav a {
     }
 
     header {
-        height: max-content;
+        height: 20vh;
     }
 
     .spacer {
@@ -432,9 +432,31 @@ footer nav a {
 
     /* footer section */
     footer {
-        height: auto;
+        height: 9vh;
         padding-top: 2.5vh;
         font-size: 1.5rem;
+    }
+
+    footer nav a {
+        font-size: 1.3rem;
+    }
+
+    footer input {
+        height: 3vh;
+        width: 23vw;
+        font-size: initial;
+        font-weight: bold;
+    }
+
+    footer button {
+        height: 3vh;
+        width: 9vw;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .copyright {
+        font-size: 1.2rem;
     }
 }
 
