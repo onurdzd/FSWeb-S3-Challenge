@@ -231,6 +231,7 @@ header nav a {
     margin-left: 0;
     margin: 2.5rem;
     cursor: pointer;
+    padding-top: 1rem;
 }
 
 .social-media {
@@ -240,11 +241,13 @@ header nav a {
     justify-content: space-around;
     margin: 0 auto;
     cursor: pointer;
+    padding-top: 2rem;
 }
 
 .social-media i {
     width: 100%;
     font-size: 3rem;
+    padding: 0 1rem;
 }
 
 /* spacers */
@@ -346,16 +349,17 @@ header nav a {
 }
 
 .address {
-    width: 25%;
+    width: 33%;
 }
 
 .hours {
-    width: 25%;
+    width: 33%;
     padding-bottom: 2.5vh;
 }
 
 .contacts {
-    width: 25%;
+    width: 33%;
+    text-decoration: none;
 }
 
 .contacts a {
@@ -396,6 +400,7 @@ footer input {
     width: 23vw;
     font-size: initial;
     font-weight: bold;
+    text-align: center;
 }
 
 footer button {
@@ -416,17 +421,24 @@ footer nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding-right: 3rem;
+    gap: 15%;
 }
 
 footer nav a {
     color: white;
-    margin: 1%;
+    margin-right: 1%;
+    width: 21rem;
+}
+
+.ozel-teklifler {
+    padding-left: 3rem;
 }
 
 .copyright {
     float: right;
     font-size: 2rem;
-    margin-right: 5rem;
+    padding-top: 2rem;
 }
 
 /* mobile media query */
@@ -488,6 +500,11 @@ footer nav a {
         margin: 1rem;
     }
 
+    #email,
+    #phone {
+        font-size: 1.5rem;
+    }
+
     .footer-flex {
         flex-direction: column;
         align-items: center;
@@ -495,6 +512,11 @@ footer nav a {
 
     .mail-liste {
         width: 70%;
+    }
+
+    .nav-copyright {
+        flex-direction: column;
+        align-items: center;
     }
 
     footer input {
@@ -506,13 +528,23 @@ footer nav a {
         font-size: 1.2rem;
     }
 
+    footer nav {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
     footer nav a {
         font-size: 1.7rem;
     }
 
+    .nav-copyright {
+        padding: 0;
+    }
+
     .copyright {
         font-size: 1rem;
-        margin-right: 2rem;
+        margin: auto 0;
     }
 
 }
@@ -535,7 +567,7 @@ footer nav a {
     }
 
     h5 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     p {
@@ -550,17 +582,71 @@ footer nav a {
         margin: 1rem;
     }
 
+    header nav a {
+        margin: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    .social-media {
+        padding-top: 3rem;
+    }
+
+    .address {
+        width: 28%;
+    }
+
+    .hours {
+        width: 28%;
+        padding-bottom: 1vh;
+    }
+
+    .contacts {
+        width: 38%;
+        margin-right: 1rem;
+    }
+
+    #email,
+    #phone {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding-top: 1vh;
+        height: 15vh;
+    }
+
+    footer input {
+        height: 4vh;
+        width: 20vw;
+        font-size: 1rem;
+
+    }
+
     footer button {
         font-size: 1.2rem;
+        height: 4vh;
     }
 
     footer nav a {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+        width: 8rem;
+    }
+
+    footer nav a:first-child {
+        width: 5rem;
+    }
+
+    footer nav a:last-child {
+        width: 5rem;
+    }
+
+    .ozel-teklifler {
+        padding-left: 2rem;
     }
 
     .copyright {
         font-size: 1.5rem;
-        margin-right: 2rem;
+
     }
 
 }
@@ -608,6 +694,14 @@ footer nav a {
         font-size: 1.8rem;
     }
 
+    header nav a {
+        padding-top: 4rem;
+    }
+
+    .social-media {
+        padding-top: 4rem;
+    }
+
     .gallery div {
         width: 80%;
         align-items: center;
@@ -615,9 +709,9 @@ footer nav a {
         margin: 0 auto;
     }
 
-    .menu {
-        background-image: none;
-        background-color: rgb(0, 4, 17);
+    #email,
+    #phone {
+        font-size: 2.5rem;
     }
 
     /* footer section */
@@ -631,6 +725,11 @@ footer nav a {
 
     footer nav a {
         font-size: 2rem;
+        width: 13rem;
+    }
+
+    .ozel-teklifler {
+        padding-left: 2rem;
     }
 
     .copyright {
